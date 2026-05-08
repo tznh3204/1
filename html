@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>🤍</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Cairo', sans-serif;
+
+    min-height:100vh;
+
+    overflow:hidden;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background-color:#170322;
+
+    background-image:
+    radial-gradient(circle at 15% 10%, rgba(255,255,255,0.18), transparent 24%),
+    radial-gradient(circle at 80% 10%, rgba(255,255,255,0.12), transparent 18%),
+    linear-gradient(180deg, rgba(255,123,156,0.95), rgba(105,34,199,0.82) 45%, rgba(44,11,74,0.95)),
+    url('https://cdn.discordapp.com/attachments/1431423889212444854/1499921841832067112/IMG_2264.jpg?ex=69ff2052&is=69fdced2&hm=b0cef006980e22dd7df1804d3a7f8fc2d3493c7643ea63f5f15cdf2321af6316&');
+
+    background-size:cover;
+
+    background-position:center;
+
+    position:relative;
+}
+
+/* التوهج */
+
+.glow{
+
+    position:absolute;
+
+    width:600px;
+    height:600px;
+
+    background:radial-gradient(circle, rgba(255,255,255,0.22), rgba(255,63,146,0.08) 40%, transparent 70%);
+
+    border-radius:50%;
+
+    filter:blur(90px);
+
+    animation:pulse 5s infinite alternate;
+}
+
+@keyframes pulse{
+
+    from{
+        transform:scale(1);
+    }
+
+    to{
+        transform:scale(1.2);
+    }
+}
+
+/* القلوب */
+
+.heart{
+
+    position:absolute;
+
+    color:#ffe9ff;
+
+    opacity:0.85;
+
+    pointer-events:none;
+
+    animation:float 8s linear infinite;
+
+    text-shadow:
+    0 0 10px rgba(255,125,200,0.8),
+    0 0 18px rgba(255,255,255,0.6);
+}
+
+@keyframes float{
+
+    0%{
+
+        transform:
+        translateY(100vh)
+        scale(0.5)
+        rotate(0deg);
+
+        opacity:0;
+    }
+
+    30%{
+        opacity:1;
+    }
+
+    100%{
+
+        transform:
+        translateY(-20vh)
+        scale(1.3)
+        rotate(360deg);
+
+        opacity:0;
+    }
+}
+
+/* الكارد */
+
+.card{
+
+    width:370px;
+
+    background:rgba(255,255,255,0.15);
+
+    border:1px solid rgba(255,255,255,0.2);
+
+    backdrop-filter:blur(20px);
+
+    border-radius:35px;
+
+    padding:40px 30px;
+
+    text-align:center;
+
+    position:relative;
+
+    z-index:10;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,0.25);
+
+    animation:fadeUp 1.2s ease;
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* القلب */
+
+.bigHeart{
+
+    font-size:75px;
+
+    margin-bottom:15px;
+
+    animation:beat 1.5s infinite;
+
+    text-shadow:
+    0 0 25px rgba(255,255,255,0.65),
+    0 0 12px rgba(255,20,147,0.9);
+}
+
+@keyframes beat{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.15);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+}
+
+/* العنوان */
+
+h1{
+
+    color:white;
+
+    margin-bottom:20px;
+
+    font-size:28px;
+}
+
+/* الرسائل */
+
+#message{
+
+    color:white;
+
+    font-size:24px;
+
+    line-height:2;
+
+    min-height:160px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    transition:0.5s;
+
+    white-space:pre-line;
+}
+
+/* الزر */
+
+button{
+
+    margin-top:25px;
+
+    padding:13px 35px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:white;
+
+    color:#ff1e4d;
+
+    font-size:15px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+    box-shadow:
+    0 5px 20px rgba(255,255,255,0.25);
+}
+
+button:hover{
+
+    transform:
+    scale(1.08)
+    translateY(-2px);
+
+    box-shadow:
+    0 10px 30px rgba(255,255,255,0.4);
+}
+
+/* الزخارف */
+
+.circle{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,0.08);
+}
+
+.c1{
+
+    width:120px;
+    height:120px;
+
+    top:-40px;
+    left:-40px;
+}
+
+.c2{
+
+    width:90px;
+    height:90px;
+
+    bottom:-30px;
+    right:-20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="glow"></div>
+
+<div class="card">
+
+    <div class="circle c1"></div>
+    <div class="circle c2"></div>
+
+    <div class="bigHeart">🤍</div>
+
+    <h1>رسالة خاصة</h1>
+
+    <div id="message">
+        اضغط ابدأ 🤍
+    </div>
+
+    <button id="mainBtn" onclick="nextMessage()">
+        ابدأ
+    </button>
+
+</div>
+
+<script>
+
+/* الرسائل */
+
+const messages = [
+
+"نوني ؟ 🤍",
+
+"إذا كان العالم كله ضدك\nانا مع العالم ضدك 🤍",
+
+"امزح",
+
+"لو زعلوك الناس و الكل خلاك\nأنا معك يا بنت منتي وحيده 🤍",
+
+"أبيع لاجل عيونك الخلق لرضاك\nيا أجمل تفاصيل الحياة السعيده ✨",
+
+"ابتسمي جعل البسمه ماتفارق محياك 🌷",
+
+"وجودك في حياتي اكبر نعمة 🥀",
+
+"عيشي و انبسطي\nالزعل ما يتناسب مع روحك النقيه ✨",
+
+"تشاو 🤍"
+
+];
+
+let index = -1;
+
+/* الرسائل */
+
+function nextMessage(){
+
+    index++;
+
+    const message =
+    document.getElementById("message");
+    const button =
+    document.getElementById("mainBtn");
+
+    message.style.opacity = "0";
+
+    setTimeout(()=>{
+
+        if(index < messages.length){
+
+            message.innerText =
+            messages[index];
+
+            if(index === messages.length - 1){
+                button.innerText = "RESTART";
+            } else {
+                button.innerText = "NEXT";
+            }
+
+        } else {
+
+            index = -1;
+            message.innerText = "اضغط ابدأ 🤍";
+            button.innerText = "ابدأ";
+        }
+
+        message.style.opacity = "1";
+
+    },300);
+}
+
+/* إنشاء القلوب */
+
+function createHeart(){
+
+    const heart =
+    document.createElement("div");
+
+    heart.classList.add("heart");
+
+    heart.innerHTML = "❤";
+
+    heart.style.left =
+    Math.random()*100 + "vw";
+
+    heart.style.fontSize =
+    Math.random()*20 + 10 + "px";
+
+    heart.style.animationDuration =
+    Math.random()*4 + 4 + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(()=>{
+        heart.remove();
+    },8000);
+}
+
+setInterval(createHeart,150);
+
+</script>
+
+</body>
+
+</html>
